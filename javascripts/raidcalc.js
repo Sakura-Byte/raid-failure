@@ -9,7 +9,7 @@ function processRaidForm(){
 	var chance = calculateRaidFailureChance(type, count, size, ure);
 
 
-	$("#resultspan").text(chance.toFixed(2).substring(2) + "%");
+	$("#resultspan").text(chance.toFixed(2) + "%");
 }
 
 function calculateRaidFailureChance(type, diskCount, disksizeGB, ure){
