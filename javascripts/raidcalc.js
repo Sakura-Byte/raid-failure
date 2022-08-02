@@ -8,8 +8,8 @@ function processRaidForm(){
 	var ure   = $('#ureaverage option:selected').val();
 	var chance = calculateRaidFailureChance(type, count, size, ure);
 
-
-	$("#resultspan").text(chance*100.toFixed(2) + "%");
+	var percent=chance*100;
+	$("#resultspan").text(percent.toFixed(2) + "%");
 }
 
 function calculateRaidFailureChance(type, diskCount, disksizeGB, ure){
