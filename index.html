@@ -30,12 +30,12 @@
         <div class="cover-container">
 
           <div class="inner cover">
-            <h1 class="cover-heading">RAID rebuild failure chance calculator.</h1>
-            <p>This calculator determines the chance of a RAID rebuild failing due to an unrecoverable read error. The calculator makes a <a style="font-weight: bold" href="http://www.raidtips.com/raid5-ure.aspx">number of assumptions.</a></p>
-            <p>Other types of drive errors and failures are not considered as part of this calculator.</p>
+            <h1 class="cover-heading">RAID重建失败机率计算器</h1>
+            <p>这个计算器确定了由于不可恢复的读取错误而导致RAID重建失败的机会。该计算器做了 <a style="font-weight: bold" href="http://www.raidtips.com/raid5-ure.aspx">一些假设。</a></p>
+            <p>其他类型的驱动器错误和故障不作为该计算器的一部分来考虑。</p>
             <form id="failchanceform" class="form-horizontal" role="form">
   <div class="form-group">
-    <label for="raidtype" class="col-sm-3 control-label">Type</label>
+    <label for="raidtype" class="col-sm-3 control-label">RAID类型</label>
     <div class="col-sm-9">
       <select id="raidtype" class="form-control">
         <option>RAID 5</option>
@@ -44,7 +44,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="drivesize" class="col-sm-3 control-label">Drive Size (GB)</label>
+    <label for="drivesize" class="col-sm-3 control-label">单颗硬盘大小</label>
     <div class="col-sm-9">
       <select id="drivesize" class="form-control">
         <option value="500">500 GB</option>
@@ -67,7 +67,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="drivecount" class="col-sm-3 control-label">Number of Drives</label>
+    <label for="drivecount" class="col-sm-3 control-label">硬盘数量</label>
     <div class="col-sm-9">
       <select id="drivecount" class="form-control">
         <option>3</option>
@@ -91,7 +91,7 @@
     </div>
   </div>
     <div class="form-group">
-    <label for="ureaverage" class="col-sm-3 control-label">Unrecoverable read error rate</label>
+    <label for="ureaverage" class="col-sm-3 control-label">不可恢复的读取错误率(URE)</label>
     <div class="col-sm-9">
       <select id="ureaverage" class="form-control">
         <option value="9">10 ^ 9</option>
@@ -107,14 +107,15 @@
     </div>
   </div>
 </form>
-          <p class="lead">Errorless rebuild success chance:</p>
+          <p class="lead">你的RAID完成无错误重建的概率是:</p>
           <p id="resultspan"></p>
           </div>
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Project maintained by <a href="https://github.com/magJ">magJ</a></p>
-              <p>For any suggestions or corrections <a href="https://github.com/magJ/raid-failure">View the Project on GitHub <small>magJ/raid-failure</small></a></p>
+              <p>Project maintained by <a href="https://github.com/mynameispy">SakuraPY</a></p>
+              <p>Project published by <a href="https://github.com/magJ">magJ</a> firstly.</p>
+              <p>For any suggestions or corrections <a href="https://github.com/mynameispy/raid-failure">View the Project on GitHub <small>mynameispy/raid-failure</small></a></p>
             </div>
           </div>
 
